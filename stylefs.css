@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=IBM+Plex+Serif&family=Josefin+Sans&family=Koulen&family=Lobster&family=Pacifico&family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "IBM Plex Serif", serif;
+}
+body{
+    background-image: url("https://cdn1.vectorstock.com/i/1000x1000/13/40/todo-list-seamless-pattern-universal-background-vector-7561340.jpg") ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+
+}
+.header{
+    text-align: center;
+    color: crimson;
+    font-size: 25px;
+}
+.todo-list{
+    width: 450px;
+    padding: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: whitesmoke;
+}
+.list-head{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+}
+.entered-list{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+.add-list{
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    outline: none;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    opacity: .6;
+    pointer-events: none;
+}
+.add-list.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.tasks{
+    width: 100%;
+    margin-top: 30px;
+}
+.item{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.item p{
+    font-size: 16px;
+    color: #111;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.item.completed p{
+    text-decoration: line-through;
+    color: #11111180;
+}
+.item-btn{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item-btn i{
+    color: green;
+    font-size: 18px;
+    cursor: pointer;
+}
+.item-btn :hover{
+    opacity: .6;
+    color: red;
+}
